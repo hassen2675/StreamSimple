@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:minHeight="600dp">
+
+        <!-- Logo -->
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:text="📺"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:background="@color/accent"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StreamX IPTV"
+            android:textColor="@color/text"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xtream Codes Player"
+            android:textColor="#4DF0F4FF"
+            android:textSize="12sp"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SERVER URL"
+                android:textColor="#4DF0F4FF"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etServer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="http://server.com:8080"
+                android:hintTextColor="#2EF0F4FF"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:background="@drawable/input_bg"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:inputType="textUri"
+                android:singleLine="true"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BENUTZERNAME"
+                android:textColor="#4DF0F4FF"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="username"
+                android:hintTextColor="#2EF0F4FF"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:background="@drawable/input_bg"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:singleLine="true"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORT"
+                android:textColor="#4DF0F4FF"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="••••••••"
+                android:hintTextColor="#2EF0F4FF"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:background="@drawable/input_bg"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="VERBINDEN"
+                android:textColor="@color/bg"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/btn_accent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
